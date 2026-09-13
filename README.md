@@ -12,6 +12,8 @@ Educational simulation and architecture only. No motor construction, no mix reci
 reusable-rocket/
   README.md
   docs/DESIGN.md          architecture, mass budget, reuse loop
+  docs/index.html         GitHub Pages site
+  docs/assets/            plots used by the site
   docs/PROPELLANT.md      20% methane / 4:1 LOX split
   sim/rr01.py             point-mass integrator + plots + economics
   sim/last_flight.json    last run summary (written by the sim)
@@ -27,6 +29,14 @@ python3 sim/rr01.py
 Requires numpy and matplotlib (present in this sandbox).
 
 Soft landing is the reuse gate: vertical speed under 8 m/s, horizontal under 6 m/s, mass still above dry.
+
+## Site
+
+`docs/index.html` is the public page. After push:
+
+GitHub repo → Settings → Pages → Source: **Deploy from a branch** → `main` / `/docs`.
+
+Live URL will be `https://fitzyracing1.github.io/reusable-rocket/` if the repo is named `reusable-rocket`.
 
 ## Relation to other projects
 

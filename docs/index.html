@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RR-01 — Reusable hopper · 20% methane</title>
+  <meta name="description" content="RR-01 conceptual reusable hopper. Pad load locked at 20% methane / 80% LOX, 4:1 by mass. Soft landing on the baseline hop.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://fitzyracing1.github.io/reusable-rocket/">
+  <meta property="og:title" content="RR-01 Reusable Hopper">
+  <meta property="og:description" content="3,600 kg methane + 14,400 kg LOX. Soft landing at −7.4 m/s.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #0b0c0e;
+      --card: #14161a;
+      --line: #2a2e36;
+      --text: #e8e6e1;
+      --muted: #9a958c;
+      --accent: #2a9d8f;
+      --hot: #e4572e;
+      --gold: #f3a712;
+      --ok: #3ddc97;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.45;
+      -webkit-text-size-adjust: 100%;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 1.25rem 1.1rem 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1 {
+      font-size: clamp(1.8rem, 7vw, 2.6rem);
+      margin: 0.25rem 0 0.2rem;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+    }
+    .sub { color: var(--muted); margin: 0 0 0.8rem; max-width: 40rem; }
+    .badge {
+      display: inline-block;
+      background: #12352f;
+      color: var(--ok);
+      border: 1px solid #1f6b5e;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    main { padding: 1.1rem; max-width: 980px; margin: 0 auto; }
+    section { margin: 1.4rem 0 1.8rem; }
+    h2 {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 0.7rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+    @media (min-width: 720px) {
+      .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.85rem 0.9rem;
+    }
+    .card .n {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      font-variant-numeric: tabular-nums;
+    }
+    .card .l { color: var(--muted); font-size: 0.78rem; margin-top: 0.15rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      font-variant-numeric: tabular-nums;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.55rem 0.4rem;
+      border-bottom: 1px solid var(--line);
+    }
+    th { color: var(--muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    td:not(:first-child), th:not(:first-child) { text-align: right; }
+    figure { margin: 0 0 1rem; }
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #111;
+      display: block;
+    }
+    figcaption { color: var(--muted); font-size: 0.8rem; margin-top: 0.35rem; }
+    .warn {
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-left: 3px solid var(--hot);
+      padding: 0.4rem 0.7rem;
+      margin: 0.8rem 0;
+    }
+    ol.phases { padding-left: 1.15rem; margin: 0; }
+    ol.phases li { margin: 0.25rem 0; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.2rem 1.1rem 2.4rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="kicker">Fitzyracing1 · conceptual hopper</div>
+    <h1>RR-01</h1>
+    <p class="sub">Reusable first-stage stand-in. Same airframe flies, lands, inspects, refuels, flies again. Not an orbital vehicle.</p>
+    <span class="badge">SOFT LANDING · −7.4 m/s</span>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pad load — locked</h2>
+      <div class="grid grid-4">
+        <div class="card"><div class="n">20%</div><div class="l">methane by mass</div></div>
+        <div class="card"><div class="n">4 : 1</div><div class="l">LOX : CH₄</div></div>
+        <div class="card"><div class="n">3,600 kg</div><div class="l">methane loaded</div></div>
+        <div class="card"><div class="n">14,400 kg</div><div class="l">LOX loaded</div></div>
+      </div>
+      <p class="warn">Allocation only. Stoichiometric mass split for CH₄ + 2 O₂. Not a mix recipe and not a live-fire procedure.</p>
+    </section>
+
+    <section>
+      <h2>Vehicle</h2>
+      <div class="grid grid-4">
+        <div class="card"><div class="n">8 t</div><div class="l">dry mass</div></div>
+        <div class="card"><div class="n">18 t</div><div class="l">propellant</div></div>
+        <div class="card"><div class="n">26 t</div><div class="l">wet mass</div></div>
+        <div class="card"><div class="n">1.92</div><div class="l">liftoff T/W</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Baseline hop</h2>
+      <div class="grid grid-4">
+        <div class="card"><div class="n">2.58 km</div><div class="l">apogee</div></div>
+        <div class="card"><div class="n">78.4 s</div><div class="l">flight time</div></div>
+        <div class="card"><div class="n">0.25 km</div><div class="l">downrange at touchdown</div></div>
+        <div class="card"><div class="n">14.5 kPa</div><div class="l">max-Q</div></div>
+      </div>
+      <table style="margin-top:1rem">
+        <thead>
+          <tr><th></th><th>Methane</th><th>LOX</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Loaded</td><td>3,600 kg</td><td>14,400 kg</td><td>18,000 kg</td></tr>
+          <tr><td>Burned</td><td>1,399 kg</td><td>5,596 kg</td><td>6,995 kg</td></tr>
+          <tr><td>Left on deck</td><td>2,201 kg</td><td>8,804 kg</td><td>11,005 kg</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Flight plots</h2>
+      <figure>
+        <img src="assets/trajectory.png" alt="RR-01 trajectory by phase">
+        <figcaption>Boost, coast, fall, landing. Touchdown 250 m downrange.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/history.png" alt="Altitude, velocity, and mass vs time">
+        <figcaption>Altitude, velocity, mass. Landing burn kills the sink from about −150 m/s.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/maxq.png" alt="Dynamic pressure vs time">
+        <figcaption>Max-Q 14.5 kPa — a short hop, not an orbital max-Q.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Profile the sim flies</h2>
+      <ol class="phases">
+        <li>Boost — 16.5 s, shallow pitch</li>
+        <li>Coast — engine off</li>
+        <li>Boostback — kill residual downrange speed</li>
+        <li>Fall — unpowered</li>
+        <li>Landing burn — suicide-burn altitude + hover-ish T/W near deck</li>
+        <li>Touchdown — soft if |vy| &lt; 8 m/s and |vx| &lt; 6 m/s</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Reuse argument</h2>
+      <p class="sub" style="margin:0">Conceptual 10-flight campaign: expendable ~$48M vs reusable ~$7.3M. Reuse only holds if the landing stays soft and turnaround is a checklist, not a rebuild. TSB-01 stays the on-orbit hull. RR-01 is the booster-side analog.</p>
+    </section>
+  </main>
+
+  <footer>
+    RR-01 · educational model · Almeida / fitzyracing1<br>
+    Run the sim: <code>python3 sim/rr01.py</code><br>
+    Source: <a href="https://github.com/fitzyracing1/reusable-rocket">github.com/fitzyracing1/reusable-rocket</a>
+  </footer>
+</body>
+</html>
