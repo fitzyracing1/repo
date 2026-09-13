@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "vehicle": "RR-01",
+    "wet_mass_kg": 26000.0,
+    "dry_mass_kg": 8000.0,
+    "twr_liftoff": 1.922,
+    "flight_time_s": 78.4,
+    "apogee_km": 2.577,
+    "downrange_at_td_km": 0.25,
+    "meco": {
+      "t": 16.52,
+      "x": 63.14,
+      "y": 1321.32,
+      "vx": 15.23,
+      "vy": 163.73,
+      "m": 23073.02
+    },
+    "max_q_kpa": 14.47,
+    "max_mach": 0.48,
+    "touchdown_v_vert_mps": -7.4,
+    "touchdown_v_horiz_mps": 0.0,
+    "touchdown_speed_mps": 7.4,
+    "remaining_prop_kg": 11005.3,
+    "prop_used_kg": 6994.7,
+    "of_ratio": 4.0,
+    "methane_frac": 0.2,
+    "methane_loaded_kg": 3600.0,
+    "lox_loaded_kg": 14400.0,
+    "methane_used_kg": 1398.9,
+    "lox_used_kg": 5595.8,
+    "methane_left_kg": 2201.1,
+    "lox_left_kg": 8804.2,
+    "methane_loaded_m3": 8.53,
+    "lox_loaded_m3": 12.62,
+    "soft_landing": true,
+    "final_phase": "landed",
+    "reuse_verdict": "SOFT LANDING \u2014 vehicle recoverable for inspect/refuel/reflight"
+  },
+  "propellant": {
+    "name": "LOX / methane",
+    "of_ratio_mass": 4.0,
+    "methane_percent": 20.0,
+    "note": "4:1 oxidizer:fuel by mass. Stoichiometric allocation. Not a mix recipe."
+  },
+  "economics": {
+    "flights": 10,
+    "expendable_campaign_usd": 48000000,
+    "reusable_campaign_usd": 7338000,
+    "savings_usd": 40662000,
+    "cost_per_flight_reusable_usd": 733800,
+    "note": "Conceptual dollars for a small hopper-class vehicle. Not a quote."
+  },
+  "plots": [
+    "plots/trajectory.png",
+    "plots/history.png",
+    "plots/maxq.png"
+  ],
+  "samples": {
+    "t_head": [
+      0.04,
+      0.08,
+      0.12
+    ],
+    "y_head_m": [
+      0.014471428089157261,
+      0.04342250755946274,
+      0.0868614546013593
+    ],
+    "n_samples": 1960
+  }
+}
