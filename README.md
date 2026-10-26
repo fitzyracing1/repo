@@ -43,3 +43,11 @@ Live URL will be `https://fitzyracing1.github.io/reusable-rocket/` if the repo i
 - TSB-01 / Teslabotspacecruiser — on-orbit assembled ship. Not a lander. RR-01 is the booster-side analog.
 - Hardware-Prototype-Tracker `Open Source Spaceship` (#3) — concept tracker this can log against.
 - Amateur 3" line — expendable practice hardware; this file is the reuse argument, not a scale-up of that motor.
+
+## Plans
+
+This project is free, and its license stays as is. Support it through [GitHub Sponsors](https://github.com/sponsors/fitzyracing1):
+
+- **Free**: use the code, community support.
+- **Pro ($49/month)**: priority issues and support.
+- **Team ($199/month)**: priority support for your team plus early access.
